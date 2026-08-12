@@ -5,7 +5,7 @@ SAS and R code for the analysis of state-level predictors of early hearing detec
 
 This repository contains the SAS and R code used for data cleaning, statistical analysis, and figure generation for:
 
-State-level factors associated with infant hearing loss detection and intervention indicators in the United States.
+[State-level factors associated with infant hearing loss detection and intervention indicators in the United States.]
 
 ## Authors
 
