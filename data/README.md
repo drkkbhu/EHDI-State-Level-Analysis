@@ -104,5 +104,4 @@ The datasets provided here represent the analytic datasets used in the
 study and are intended to facilitate reproduction of the reported
 analyses.
 
-For details regarding the statistical analyses, see the R scripts in
-the `R/` directory.
+For details regarding the statistical analyses, see the R scripts.
