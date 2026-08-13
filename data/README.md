@@ -30,3 +30,79 @@ The data used in this study are publicly available and contain no
 personally identifiable information (PII) or protected health
 information (PHI).
 
+# Analysis Data
+
+This folder contains the two analytic datasets used in the study. Both
+datasets were constructed from publicly available data sources using
+the data preparation and processing procedures documented in the R
+analysis scripts in this repository.
+
+The datasets contain state-year aggregated observations and do not
+contain personally identifiable information (PII) or protected health
+information (PHI).
+
+## 1. Primary Analysis Dataset
+
+**File:** `analysis_data_v3_EIrd_2009to2022_4282026.csv`
+
+This dataset was used for the primary analyses and includes state-year
+observations from 2009 through 2022.
+
+States were excluded if they had more than one missing year for any of
+the following variables:
+
+- Hearing loss prevalence (HLp)
+- Early intervention rate (EIr)
+- Early intervention rate based on diagnosed infants (EIrd)
+- Screening rate (PerTscr)
+- Dr
+
+The primary analytic dataset therefore includes states with no more
+than one missing year for each of these variables during the
+2009-2022 study period.
+
+The variable `EIrd` was calculated as:
+
+EIrd = (EI / TDia) × 1,000
+
+where EI represents the number of infants receiving early intervention
+and TDia represents the number of infants diagnosed.
+
+## 2. Complete-Case Sensitivity Analysis Dataset
+
+**File:** `analysis_data_complete_case_sensitivity_with_EIrd.csv`
+
+This dataset was created for the complete-case sensitivity analysis.
+
+The year 2020 was excluded from the sensitivity analysis. The analysis
+therefore included the following 13 years:
+
+- 2009-2019
+- 2021-2022
+
+Only states with complete data for all study variables across all 13
+years were included.
+
+The variables required for complete-case inclusion were:
+
+- Hearing loss prevalence (HLp)
+- Early intervention rate (EIr)
+- Early intervention rate based on diagnosed infants (EIrd)
+- Screening rate (PerTscr)
+- Dr
+
+## Data Construction
+
+The analytic datasets were derived from publicly available data sources.
+The data preparation, variable construction, state exclusion criteria,
+and analytic dataset creation are documented in the R scripts contained
+in the `R/` directory.
+
+## Reproducibility
+
+The datasets provided here represent the analytic datasets used in the
+study and are intended to facilitate reproduction of the reported
+analyses.
+
+For details regarding the statistical analyses, see the R scripts in
+the `R/` directory.
